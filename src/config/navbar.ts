@@ -12,6 +12,6 @@ export const NAV_MENU = [
   {
     id: 3,
     name: "Donate",
-    link: "/donate",
+    link: "/donation",
   },
 ];

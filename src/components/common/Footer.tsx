@@ -21,7 +21,7 @@ export default function Footer() {
             {NAV_MENU.map((nav) => (
               <li
                 key={nav.id}
-                className="text-lg font-semibold border-b-2 border-transparent  hover:border-black text-custom-black font-nunito"
+                className="text-lg max-w-max font-semibold border-b-2 border-transparent  hover:border-black text-custom-black font-nunito"
               >
                 <Link href={nav.link}>{nav.name}</Link>
               </li>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Raleway, Nunito_Sans } from "next/font/google";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
+import ReduxProvider from "@/redux/provider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -44,7 +45,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} ${nunito.variable} antialiased`}
       >
         <Header />
-        {children}
+        <ReduxProvider>{children}</ReduxProvider>
         <Footer />
       </body>
     </html>
