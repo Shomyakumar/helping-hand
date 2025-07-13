@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Raleway, Nunito_Sans } from "next/font/google";
+import Header from "@/components/common/Header";
+import Footer from "@/components/common/Footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -31,7 +33,6 @@ export const metadata: Metadata = {
   description: "A website for donation",
 };
 
-import Header from "@/ui/header/Header";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -44,6 +45,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

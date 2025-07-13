@@ -1,7 +1,7 @@
 import { HOME_ROUTE } from "@/constants/appRoutes";
 import Link from "next/link";
 import { NAV_MENU } from "@/config/navbar";
-import Sidebar from "@/components/Sidebar";
+import Sidebar from "@/components/common/Sidebar";
 
 export default function Header() {
   return (

@@ -1,5 +1,4 @@
-export default function App(){
-  return(
-    <div>App</div>
-  )
+import Home from "@/ui/homePage/Home";
+export default function App() {
+  return <Home />;
 }
